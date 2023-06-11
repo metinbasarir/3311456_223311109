@@ -27,7 +27,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final firstNameField = TextFormField(
+    final isim = TextFormField(
         autofocus: false,
         controller: adiEditingController,
         keyboardType: TextInputType.name,
@@ -54,7 +54,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ));
 
-    final secondNameField = TextFormField(
+    final soyadi = TextFormField(
         autofocus: false,
         controller: soyadiEditingController,
         keyboardType: TextInputType.name,
@@ -77,7 +77,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ));
 
-    final emailField = TextFormField(
+    final eposta = TextFormField(
         autofocus: false,
         controller: epostaEditingController,
         keyboardType: TextInputType.emailAddress,
@@ -104,7 +104,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ));
 
-    final passwordField = TextFormField(
+    final sifre = TextFormField(
         autofocus: false,
         controller: passwordEditingController,
         obscureText: true,
@@ -130,7 +130,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ));
 
-    final confirmPasswordField = TextFormField(
+    final sifreTekrar = TextFormField(
         autofocus: false,
         controller: confirmPasswordEditingController,
         obscureText: true,
@@ -154,7 +154,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ));
 
-    final signUpButton = Material(
+    final kaydetButonu = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
       color: Colors.teal,
@@ -204,17 +204,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           fit: BoxFit.contain,
                         )),
                     SizedBox(height: 45),
-                    firstNameField,
+                    isim,
                     SizedBox(height: 20),
-                    secondNameField,
+                    soyadi,
                     SizedBox(height: 20),
-                    emailField,
+                    eposta,
                     SizedBox(height: 20),
-                    passwordField,
+                    sifre,
                     SizedBox(height: 20),
-                    confirmPasswordField,
+                    sifreTekrar,
                     SizedBox(height: 20),
-                    signUpButton,
+                    kaydetButonu,
                     SizedBox(height: 15),
                   ],
                 ),

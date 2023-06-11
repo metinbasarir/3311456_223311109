@@ -302,7 +302,6 @@ class _PersonelBilgileriState extends State<PersonelBilgileri> {
                       ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(content: Text('Tüm alanları doldurun')));
                     } else {
-                      //reference to document
                       final dUser = FirebaseFirestore.instance
                           .collection('personel')
                           .doc(widget.id.isNotEmpty ? widget.id : null);
@@ -327,7 +326,6 @@ class _PersonelBilgileriState extends State<PersonelBilgileri> {
                       };
                       showProgressIndicator = true;
                       if (widget.id.isEmpty) {
-                        //create document and write data to firebase
                         await dUser.set(jsonData).then((value) {
                           sicilNumarasiController.text = '';
                           tcKimlikNumarasiController.text = '';
