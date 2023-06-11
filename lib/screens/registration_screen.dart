@@ -180,7 +180,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.teal),
           onPressed: () {
-            // passing this to our root
             Navigator.of(context).pop();
           },
         ),
